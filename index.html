@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./css2" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="contenedor header">
+        <img class="header__img" src="./logo.png" alt="Logo de Alura">
+        <div class="toggle">
+            <p class="toggle__p">Oscuro</p>
+            <img class="toggle__img" src="./luna.png" alt="Luna Dark-Mode">
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+        <section class="ingresar">
+            <textarea id="lectura" class="ingresar__txt" placeholder="Ingrese el texto aquí"></textarea>
+
+            <div class="restringir">
+                <img class="restringir__img" src="./alerta.png" alt="Signo de Exclamación">
+                <p class="restringir__p">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="btns">
+                <button id="encriptar" class="btn btn--azul">Encriptar</button>
+                <button id="desencriptar" class="btn btn--transparente">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="respuesta">
+            <div class="default ocultar">
+                <div class="default__muneco"></div>
+                <p class="default__bold">Ningún mensaje fue encontrado</p>
+                <p class="default__normal">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            <div class="datos">
+                <textarea id="escritura" class="datos__text" readonly="">hola como estas?</textarea>
+                <button id="copiar" class="btn btn--transparente btn__copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <p class="footer__p">Challenge Encriptador de texto - Karla Samaniego</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+
+</body></html>
